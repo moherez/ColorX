@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ColorX</string>
+    <string name="Hex_to_rgb">Hex to RGB</string>
+    <string name="Hex_to_rgb_des">Convert a color in hex to red, green, and blue values</string>
+    <string name="Hex_to_rgb_exa">example: #FFFFFF to 250, 250, 250</string>
+    <string name="rgb_to_hex">RGB to Hex</string>
+    <string name="rgb_to_hex_des">Get hex to  any color by red, green, and blue values</string>
+    <string name="rgb_to_hex_exa">example: 250, 250, 250 to #FFFFFF</string>
+    <string name="firest_bakground_color">#FFFFFF</string>
+    <string name="firest_number">255</string>
+    <string name="your_color">It’s Your Random Color</string>
+    <string name="hex_codr">Enter Hex</string>
+</resources>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rgb_to_hex_cv_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".rgb_to_hex">
+
+    <TextView
+        android:id="@+id/green_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/firest_number"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/blue_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/firest_number"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/red_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/firest_number"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="373dp"
+        android:layout_height="@dimen/_300sdp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="16dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hex_text">
+
+        <LinearLayout
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-100dp"
+            android:orientation="vertical">
+
+            <SeekBar
+                android:id="@+id/red_seekbar"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:fadingEdge="vertical"
+                android:indeterminate="false"
+                android:max="255"
+                android:orientation="vertical"
+                android:progress="252"
+                android:progressTint="#D32F2F"
+                android:rotation="270" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-100dp"
+            android:orientation="vertical">
+
+            <SeekBar
+                android:id="@+id/green_seekbar"
+                android:layout_width="258dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:fadingEdge="vertical"
+                android:indeterminate="false"
+                android:max="255"
+                android:orientation="vertical"
+                android:progress="252"
+                android:progressTint="#388E3C"
+                android:rotation="270" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-100dp"
+            android:orientation="vertical">
+
+            <SeekBar
+                android:id="@+id/blue_seekbar"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:fadingEdge="horizontal|vertical"
+                android:indeterminate="false"
+                android:max="255"
+                android:orientation="vertical"
+                android:progress="252"
+                android:progressTint="#303F9F"
+                android:rotation="270" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hex_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/firest_bakground_color"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="@dimen/_36ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

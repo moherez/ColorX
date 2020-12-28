@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/themain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:textAlignment="gravity"
+    tools:context=".hex_to_rgb">
+
+    <TextView
+        android:id="@+id/hex_to_rgb_bval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="60dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text=" 255"
+        android:textAlignment="viewEnd"
+        android:textColor="#1976D2"
+        android:textColorHighlight="#FFFFFF"
+        android:textSize="@dimen/_36sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hex_to_rgb_word1" />
+
+    <TextView
+        android:id="@+id/hex_to_rgb_gval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text=" 255"
+        android:textAlignment="viewStart"
+        android:textColor="#388E3C"
+        android:textSize="@dimen/_36sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hex_to_rgb_word1" />
+
+    <TextView
+        android:id="@+id/hex_to_rgb_rval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text=" 255"
+        android:textAlignment="gravity"
+        android:textColor="#D32F2F"
+        android:textSize="@dimen/_36sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hex_to_rgb_word1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_light"
+        android:text="Red"
+        android:textAlignment="center"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hex_to_rgb_rval" />
+
+    <TextView
+        android:id="@+id/hex_to_rgb_word3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="Blue"
+        android:textAlignment="center"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hex_to_rgb_bval" />
+
+    <TextView
+        android:id="@+id/hex_to_rgb_word2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="Green"
+        android:textAlignment="center"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hex_to_rgb_gval" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/hex_to_rgb_et_hex_outline"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="50dp"
+        android:animationCache="false"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:hint="Hex"
+        android:textAlignment="gravity"
+        app:boxStrokeErrorColor="#FFFFFF"
+        app:errorEnabled="true"
+        app:helperTextEnabled="false"
+        app:hintAnimationEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hex_to_rgb_word3">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/hex_to_rgb_et_hex"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:selectAllOnFocus="false"
+            android:singleLine="true"
+            android:text="#FFFFFF"
+            android:textColor="#0F0F0F"
+            android:textSize="@dimen/_44sdp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
