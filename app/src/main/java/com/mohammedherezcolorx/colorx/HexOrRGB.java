@@ -29,9 +29,7 @@ class HexOrRGB {
 
     //Processes
     private String rgb_to_hex(int rgbNum) {return NumbersToLetters(rgbNum / 16) + NumbersToLetters(rgbNum % 16);}
-    private void hex_to_rgb(String hex) {
 
-    }
 
     //More
     private String NumbersToLetters(int num) {
